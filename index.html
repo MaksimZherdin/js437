@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="search-wrapper">
+            <label for="search">Search</label>
+            <input type="search" id="search">
+        </div>
+        <div class="user-cards">
+            <template data-user-template>
+                <div class="card">
+                    <div class="header" data-header></div>
+                    <div class="body" data-user></div>
+                    <div class="stars" data-stars></div>
+                </div>
+            </template>
+        </div>
+        <div class="list">
+            <template data-user-list-template>
+                <div class="card-list">
+                    <div class="header-list" data-header></div>
+                    <div class="body-list" data-user></div>
+                    <div class="stars-list" data-stars></div>
+                    <div class="delete-list" data-delete>X</div>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

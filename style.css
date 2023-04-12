@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.wrapper {
+    width: 482px;
+    margin: auto;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.list {
+    width: 350px;
+    margin: auto;
+}
+
+.delete-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.card-list {
+    position: relative;
+    border: 1px solid;
+    padding: 15px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.card {
+    border: 1px solid black;
+    background: white;
+    padding: .5rem;
+    margin: 0rem auto;
+    min-height: 30px;
+    width: 100%;
+    font-weight: bold;
+    transition: .2s ease;
+}
+
+.card:hover {
+    background: blue;
+    cursor: pointer;
+    color: white;
+}
+
+.card>.header {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.card>.body {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.hide {
+    display: none;
+}
